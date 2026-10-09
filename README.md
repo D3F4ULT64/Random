@@ -1,20 +1,32 @@
 # Random
 
-A collection of small experiments, utilities, and random coding projects by D3F4ULT64.
+A collection of useful small tools and experiments by D3F4ULT64.
 
-## What belongs here?
+## Included tools
 
-This repository is a place for lightweight projects and experiments that do not need their own repository.
+### `rfind.py` — recursive file finder
 
-### Ideas
+A dependency-free command-line file finder for quickly locating files in a project.
 
-- Small Python utilities
-- JavaScript experiments
-- Tiny automation scripts
-- Game prototypes
-- Useful command-line tools
-- Random programming experiments
+```bash
+python rfind.py "*.py" . --stats
+```
+
+Useful options:
+
+- `--min-size BYTES` — only show files at least this large
+- `--max-size BYTES` — only show files at most this large
+- `--all` — include hidden directories and files
+- `--no-ignore` — search dependency/build directories too
+- `--stats` — show the number and total size of matches
+
+It automatically skips common noisy directories such as `.git`, `node_modules`, virtual environments, and `__pycache__`.
+
+## Requirements
+
+- Python 3.10+
+- No third-party packages
 
 ## Status
 
-🚧 This repository is a work in progress.
+Active — more useful small tools can be added here over time.
